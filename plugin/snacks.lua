@@ -1,0 +1,33 @@
+-- vim.pack.add({
+--     { src = "https://github.com/folke/snacks.nvim" },
+-- })
+--
+-- local Snacks = require("snacks")
+--
+-- Snacks.setup({
+--     image = {
+--         doc = {
+--             enabled = true,
+--             inline = true,
+--             float = true,
+--             max_width = 120,
+--             max_height = 40,
+--         },
+--         math = {
+--             enabled = true,
+--             latex = {
+--                 font_size = "large",
+--                 packages = { "amsmath", "amssymb", "mathtools", "mathrsfs", "bm" },
+--             },
+--             tpl = [[
+--         \documentclass[preview,border=0pt,varwidth,12pt]{standalone}
+--         \usepackage{${packages}}
+--         \begin{document}
+--         ${header}
+--         { \${font_size} \selectfont
+--           \color[HTML]{${color}}
+--         ${content}}
+--         \end{document}]],
+--         },
+--     },
+-- })
