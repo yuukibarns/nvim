@@ -11,7 +11,11 @@ vim.g.mapleader = " "
 vim.g.tex_flavor = "latex"
 
 -- ENV
-vim.opt.rtp:append(vim.fn.expand("~/mySnippets"))
+vim.pack.add({
+    { src = "https://github.com/yuukibarns/mySnippets" }
+})
+
+-- vim.opt.rtp:append(vim.fn.expand("~/mySnippets"))
 -- LOCAL PLUGINS
 -- vim.opt.rtp:append(vim.fn.expand("~/R.nvim"))
 -- vim.opt.rtp:append(vim.fn.expand("~/gp.nvim/"))
@@ -19,8 +23,8 @@ vim.opt.rtp:append(vim.fn.expand("~/mySnippets"))
 vim.env.PATH = vim.fn.expand("~/.nvm/versions/node/v22.12.0/bin/") .. ":" .. vim.env.PATH
 -- Python
 -- vim.env.PATH = vim.fn.expand("~/.virtualenvs/neovim/bin/") .. ":" .. vim.env.PATH
-vim.env.PATH = vim.fn.expand("~/tex2png/") .. ":" .. vim.env.PATH
-vim.env.PATH = vim.fn.expand("~/.local/share/r-pandoc/3.9.0.2/") .. ":" .. vim.env.PATH
+-- vim.env.PATH = vim.fn.expand("~/tex2png/") .. ":" .. vim.env.PATH
+-- vim.env.PATH = vim.fn.expand("~/.local/share/r-pandoc/3.9.0.2/") .. ":" .. vim.env.PATH
 
 -- UI2
 require("vim._core.ui2").enable({
