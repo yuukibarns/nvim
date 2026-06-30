@@ -2,13 +2,13 @@ set termguicolors
 "set autochdir
 
 "Font Settings
-set guifont=JetBrainsMono\ Nerd\ Font,Noto\ Sans\ CJK\ SC,Noto\ Color\ Emoji:h9
+set guifont=JetBrainsMono\ Nerd\ Font,Noto\ Sans\ CJK\ SC,Noto\ Color\ Emoji:h10
 
 "Display
 "Line spacing
 set linespace=1
 "Scale
-let g:neovide_scale_factor = 1.1
+let g:neovide_scale_factor = 1
 "Padding
 let g:neovide_padding_top = 10
 let g:neovide_padding_bottom = 0
@@ -73,16 +73,16 @@ let g:neovide_padding_left = 10
 
 "Cursor Settings
 "Animation Length
-let g:neovide_cursor_animation_length = 0.12
+"let g:neovide_cursor_animation_length = 0.12
 "let g:neovide_cursor_short_animation_length = 0.00
 "Animation Trail Size
-let g:neovide_cursor_trail_size = 0.7
+"let g:neovide_cursor_trail_size = 0.7
 "Antialiasing
 "let g:neovide_cursor_antialiasing = v:false
 "Animate in insert mode
 "let g:neovide_cursor_animate_in_insert_mode = v:false
 "Animate switch to command line
-let g:neovide_cursor_animate_command_line = v:false
+"let g:neovide_cursor_animate_command_line = v:false
 "Unfocused Outline Width
 "let g:neovide_cursor_unfocused_outline_width = 0.125
 "Animate cursor blink

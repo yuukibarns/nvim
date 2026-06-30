@@ -21,6 +21,7 @@ oil.setup({
         ["<C-t>"] = { "actions.select", opts = { tab = true, close = true } },
         ["<C-p>"] = false,
         ["<C-c>"] = { "actions.close", mode = "n" },
+        ["q"] = { "actions.close", mode = "n" },
         ["<C-l>"] = "actions.refresh",
         ["-"] = { "actions.parent", mode = "n" },
         ["_"] = { "actions.open_cwd", mode = "n" },
@@ -107,4 +108,4 @@ oil.setup({
 
 vim.keymap.set("n", "-", "<Cmd>Oil<CR>", { desc = "Open parent directory" })
 
-require("oil-lsp-diagnostics").setup()
+-- require("oil-lsp-diagnostics").setup()

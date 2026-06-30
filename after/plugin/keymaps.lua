@@ -1,17 +1,6 @@
 -- better up/down
-vim.keymap.set({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
-vim.keymap.set({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
-
-vim.keymap.set('x', 'il', '<Esc>^vg_', { desc = 'Select inner line' })
-vim.keymap.set('o', 'il', '<cmd>normal! ^vg_<cr>', { desc = 'Select inner line' })
-
--- al (around line): first non-whitespace to absolute end of line
-vim.keymap.set({'x', 'o'}, 'al', function()
-  vim.cmd('normal! ^v$')
-end, { desc = 'Select line content to end' })
-
--- Map Ctrl-C to Esc
-vim.keymap.set({ "x", "i", "s" }, "<C-c>", "<Esc>", { noremap = true, silent = true })
+-- vim.keymap.set({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+-- vim.keymap.set({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- Map Ctrl-Backspace to Ctrl-W
 vim.keymap.set("i", "<C-BS>", "<C-w>", { noremap = true })
