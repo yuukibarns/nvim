@@ -17,10 +17,9 @@ vim.pack.add({
 
 -- vim.opt.rtp:append(vim.fn.expand("~/mySnippets"))
 -- LOCAL PLUGINS
--- vim.opt.rtp:append(vim.fn.expand("~/R.nvim"))
--- vim.opt.rtp:append(vim.fn.expand("~/gp.nvim/"))
+-- vim.opt.rtp:append(vim.fn.expand("~/Codex/snacks.nvim/"))
 -- Node
-vim.env.PATH = vim.fn.expand("~/.nvm/versions/node/v22.12.0/bin/") .. ":" .. vim.env.PATH
+vim.env.PATH = vim.fn.expand("~/.nvm/versions/node/v22.23.1/bin/") .. ":" .. vim.env.PATH
 -- Python
 -- vim.env.PATH = vim.fn.expand("~/.virtualenvs/neovim/bin/") .. ":" .. vim.env.PATH
 -- vim.env.PATH = vim.fn.expand("~/tex2png/") .. ":" .. vim.env.PATH
@@ -97,7 +96,7 @@ ls.setup({
 })
 
 require("luasnip.loaders.from_lua").lazy_load({
-    paths = { vim.fn.expand("~/mySnippets") .. "/snippets" },
+    paths = { vim.fn.stdpath("data") .. "/site/pack/core/opt/mySnippets/snippets" },
 })
 
 ls.filetype_extend("markdown", { "math" })

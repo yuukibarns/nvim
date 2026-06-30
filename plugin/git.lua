@@ -2,7 +2,7 @@ vim.pack.add({
     { src = "https://github.com/MunifTanjim/nui.nvim" },
     { src = "https://github.com/esmuellert/codediff.nvim" },
     { src = "https://github.com/lewis6991/gitsigns.nvim" },
-    { src = "https://github.com/neogitorg/neogit" }
+    -- { src = "https://github.com/neogitorg/neogit" }
 })
 
 require("codediff").setup({
@@ -26,7 +26,7 @@ require("codediff").setup({
     },
 })
 
-vim.keymap.set("n", "<leader>gg", "<cmd>Neogit<CR>", { desc = "Show Neogit UI" })
+-- vim.keymap.set("n", "<leader>gg", "<cmd>Neogit<CR>", { desc = "Show Neogit UI" })
 
 vim.keymap.set("n", "<leader>dd", "<cmd>CodeDiff<CR>", { desc = "Show git status in explorer", })
 vim.keymap.set("n", "<leader>dh", "<cmd>CodeDiff history<CR>", { desc = "Show history commits", })

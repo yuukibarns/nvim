@@ -1,0 +1,56 @@
+-- -- AI: CodeCompanion + Copilot
+-- vim.pack.add({
+--     { src = "https://github.com/nvim-lua/plenary.nvim" },
+--     { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+--     { src = "https://github.com/zbirenbaum/copilot.lua" },
+--     {
+--         src = "https://github.com/olimorris/codecompanion.nvim",
+--         version = vim.version.range("19.*"),
+--     },
+-- })
+--
+-- require("copilot").setup({
+--     suggestion = {
+--         enabled = false,
+--         auto_trigger = false,
+--     },
+--     panel = {
+--         enabled = true,
+--     },
+-- })
+--
+-- require("codecompanion").setup({
+--     strategies = {
+--         chat = {
+--             adapter = "copilot",
+--         },
+--         inline = {
+--             adapter = "copilot",
+--         },
+--         agent = {
+--             adapter = "copilot",
+--         },
+--     },
+-- })
+--
+-- -- Keymaps
+-- vim.keymap.set({ "n", "v" }, "<leader>aa", "<cmd>CodeCompanionActions<cr>", {
+--     desc = "CodeCompanion actions",
+-- })
+-- vim.keymap.set({ "n", "v" }, "<leader>ac", "<cmd>CodeCompanionChat Toggle<cr>", {
+--     desc = "Toggle CodeCompanion chat",
+-- })
+-- vim.keymap.set("v", "<leader>ae", "<cmd>CodeCompanion<cr>", {
+--     desc = "Edit selected code with CodeCompanion",
+-- })
+-- vim.keymap.set("n", "<leader>an", "<cmd>CodeCompanionChat<cr>", {
+--     desc = "New CodeCompanion chat",
+-- })
+--
+-- vim.keymap.set("n", "<leader>ap", "<cmd>CodeCompanionChat Add<cr>", {
+--     desc = "Add current buffer to chat",
+-- })
+--
+-- vim.keymap.set("v", "<leader>ap", "<cmd>CodeCompanionChat Add<cr>", {
+--     desc = "Add selection to chat",
+-- })
