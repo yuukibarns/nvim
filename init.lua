@@ -20,10 +20,6 @@ vim.pack.add({
 -- vim.opt.rtp:append(vim.fn.expand("~/Codex/snacks.nvim/"))
 -- Node
 vim.env.PATH = vim.fn.expand("~/.nvm/versions/node/v22.23.1/bin/") .. ":" .. vim.env.PATH
--- Python
--- vim.env.PATH = vim.fn.expand("~/.virtualenvs/neovim/bin/") .. ":" .. vim.env.PATH
--- vim.env.PATH = vim.fn.expand("~/tex2png/") .. ":" .. vim.env.PATH
--- vim.env.PATH = vim.fn.expand("~/.local/share/r-pandoc/3.9.0.2/") .. ":" .. vim.env.PATH
 
 -- UI2
 require("vim._core.ui2").enable({
@@ -51,7 +47,6 @@ require("vim._core.ui2").enable({
 })
 
 -- BASICS
-
 vim.pack.add({
     {
         src = "https://github.com/L3MON4D3/LuaSnip",

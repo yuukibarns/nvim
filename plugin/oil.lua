@@ -2,7 +2,7 @@ vim.pack.add({
     { src = "https://github.com/ibhagwan/fzf-lua" },
     { src = "https://github.com/echasnovski/mini.icons" },
     { src = "https://github.com/stevearc/oil.nvim" },
-    { src = "https://github.com/JezerM/oil-lsp-diagnostics.nvim" }
+    -- { src = "https://github.com/JezerM/oil-lsp-diagnostics.nvim" }
 })
 
 local oil = require("oil")

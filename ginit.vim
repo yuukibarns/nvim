@@ -55,7 +55,7 @@ let g:neovide_padding_left = 10
 "Fullscreen
 "let g:neovide_fullscreen = v:true
 "Remember Previous Window Size
-"let g:neovide_remember_window_size = v:true
+let g:neovide_remember_window_size = v:true
 "Profiler
 "let g:neovide_profiler = v:false
 "Cursor Hack
@@ -73,10 +73,10 @@ let g:neovide_padding_left = 10
 
 "Cursor Settings
 "Animation Length
-"let g:neovide_cursor_animation_length = 0.12
-"let g:neovide_cursor_short_animation_length = 0.00
+let g:neovide_cursor_animation_length = 0.00
+let g:neovide_cursor_short_animation_length = 0.00
 "Animation Trail Size
-"let g:neovide_cursor_trail_size = 0.7
+let g:neovide_cursor_trail_size = 0.0
 "Antialiasing
 "let g:neovide_cursor_antialiasing = v:false
 "Animate in insert mode

@@ -3,8 +3,6 @@ vim.pack.add({
         src = "https://github.com/Saghen/blink.cmp",
         version = vim.version.range("1.*")
     },
-    -- { src = "https://github.com/yuukibarns/blink-cmp-bm.nvim" },
-    { src = "https://github.com/yuukibarns/blink-cmp-dictionary" },
     { src = "https://github.com/nvim-lua/plenary.nvim" },
 })
 
@@ -31,7 +29,7 @@ require("blink.cmp").setup({
                 elseif require("mySnippets.tex").in_code() then
                     return { "lsp", "path", "buffer" }
                 else
-                    return { "lsp", "path", "buffer", "snippets", "dictionary" }
+                    return { "lsp", "path", "buffer", "snippets" }
                 end
             end
             return { "lsp", "path", "buffer" }
@@ -41,25 +39,6 @@ require("blink.cmp").setup({
             lsp = {
                 fallbacks = {},
             },
-            dictionary = {
-                module = "blink-cmp-dictionary",
-                score_offset = -3,
-                min_keyword_length = 2,
-                name = "Dict",
-                opts = {
-                    dictionary_files = {
-                        vim.fn.stdpath("config") .. "/spell/en.utf-8.add",
-                    },
-                },
-            },
-            -- bookmark = {
-            --     module = "blink-cmp-bm",
-            --     name = "Bookmark",
-            --     score_offset = -3,
-            --     opts = {
-            --         prefix_min_len = 3,
-            --     },
-            -- },
         },
     },
 })

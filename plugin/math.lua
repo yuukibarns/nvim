@@ -30,7 +30,7 @@ local function align_o()
 end
 
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = { "tex", "markdown", "rmd", "quarto" },
+    pattern = { "tex", "markdown" },
     callback = function()
         if vim.bo.buftype ~= "nofile" then
             vim.opt_local.conceallevel = 2
