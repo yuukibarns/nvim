@@ -28,8 +28,6 @@ require("fzf-lua").setup({
     }
 })
 
--- require("fzf-lua").register_ui_select()
-
 vim.keymap.set("n", "<leader>ff", function()
     require("fzf-lua").files({
         cwd = vim.fs.root(0, ".git"),

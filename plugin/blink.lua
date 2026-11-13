@@ -7,7 +7,7 @@ vim.pack.add({
 })
 
 require("blink.cmp").setup({
-    snippets = { preset = "luasnip" },
+    -- snippets = { preset = "luasnip" },
 
     keymap = {
         preset = "default",
@@ -23,15 +23,6 @@ require("blink.cmp").setup({
 
     sources = {
         default = function()
-            if vim.tbl_contains({ "markdown", "tex" }, vim.bo.filetype) then
-                if require("mySnippets.tex").in_math() then
-                    return { "lsp", "snippets" }
-                elseif require("mySnippets.tex").in_code() then
-                    return { "lsp", "path", "buffer" }
-                else
-                    return { "lsp", "path", "buffer", "snippets" }
-                end
-            end
             return { "lsp", "path", "buffer" }
         end,
 
